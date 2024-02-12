@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;500;800&family=Poppins:ital,wght@0,200;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: black;
+    font-family: Quicksand;
+    font-size: 14px;
+
+}
+
+.header{
+    color: white;
+    background-color: rgb(24, 24, 24);
+    height: 50px;
+    font-weight: 400;
+    display: flex;
+    align-items: center; /* מיישר את התוכן באופן אנכי למרכז */
+    justify-content: space-between; /* מפזר את האלמנטים לפי הרווח הזמין */
+    padding: 20px; /* פאדינג לכל הכיוונים של ה-header */
+    padding-left: 100px;
+    padding-right: 300px;
+
+    
+}
+
+.logo {
+    font-size: 30px;
+
+  }
+
+  .active {
+    text-decoration: none;
+    font-weight: 700;
+    
+  }
+
+  .header a{
+    color: white;
+    
+    
+  }
+  
+  .search input {
+border: none;
+border-radius: 20px;
+padding: 0.5rem;
+text-align: left; /* ממרכז את החיפוש בקונטיינר שלו */
+  }
+
+
+.layout{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.list{
+    width: 100vw;
+    min-width: 500px;
+    padding: 20px;
+}
+
+.player {
+    width: 100vw; /* רוחב השחקן */
+    height: 100px;
+    background-color: rgb(24, 24, 24);
+    position: fixed; /* מיקום קבוע */
+    bottom: 0; /* 5% מהחלק התחתון של המסך */
+    display: flex; /* שימוש ב-flexbox */
+    flex-direction: column;
+    justify-content: center; /* מרכז אופקית */
+    align-items: center; /* מרכז אנכית */
+}
+
+
+.progress {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffffff;
+    height: 0.5rem;
+  }
+
+  
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -6px; /* Centers thumb on the track */
+    background-color: #ffffff;
+    height: 1.5rem;
+    width: 1.5rem;   
+    border-radius: 50%; 
+    box-shadow: 0px 0px  10px rgb(44, 44, 44);
+}
+
+
+
+
+.progress input {
+    width: 100vw;
+    
+}
+
+
+.progress .playButton {
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    color: rgb(64, 71, 67);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.progress .playButton:hover {
+
+    background-color:rgb(64, 71, 67);
+    color: #ffffff;
+    box-shadow: 0px 0px  10px rgb(44, 44, 44);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.leftSide {
+    display: flex;
+    align-items: center; /* ממרכז את התוכן באופן אנכי */
+}
+
+.rightSide {
+    display: flex;
+    align-items: center; /* ממרכז את התוכן באופן אנכי */
+    justify-content: flex-end;
+}
+
+.song {
+    color: white;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(24, 24, 24);
+    justify-content: space-between; /* מרחיק את האלמנטים אחד מהשני */
+    align-items: center; /* ממרכז את התוכן באופן אנכי */
+}
+
+.song:hover {
+    background-color: rgb(64, 71, 67);
+    cursor: pointer;
+}
+
+.song:active {
+    background-color: rgb(77, 107, 86);
+}
+
+.artistAndName {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artistAndName > .name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.artistAndName > .artist {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+.likeAndTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.time {
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+  .video {
+    display: none;
+    /* width: 500px; 
+    height: 280px;  */
+
+  }
+
+
+
+
+.liked{
+    color: white;
+    font-size: 100px;
+}
+
+.likeButton {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.likeButton svg {
+    font-size: 1.5rem;
+}
+
+.likeButton:hover {
+    color: red;
+}
+
+.likeButton.liked {
+    color: red; /* צבע עבור המצב של 'נלחץ' */
+}
